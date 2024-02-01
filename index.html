@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="paged'accueil.css.css">
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay loop muted id="myVideo">
+    <source src="planetete.mp4" type="video/mp4">
+</video>
+
+
+
+<div class="mega-dropdown" id="megaDropdown">
+    <!-- Add an icon to the menu button using Unicode character -->
+    <button class="mega-dropbtn" onclick="toggleDropdown()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <span class="menu-text">Menu</span>
+    </button>
+    <div class="mega-dropdown-content">
+        <div class="mega-column">
+            <h3>SPACEPORTS</h3>
+            <a href="PAGEE.html">Pacific complex</a>
+            <a href="Page22.html">CEES Algerie</a>
+            <a href="page33.html">Xichang Center</a>
+        </div>
+    </div>
+</div>
+
+<!-- Toggle button code -->
+<div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+<script>
+    // JavaScript function to toggle the dropdown content
+    function toggleDropdown() {
+        var dropdownContent = document.getElementById("megaDropdown").getElementsByClassName("mega-dropdown-content")[0];
+        dropdownContent.style.display = (dropdownContent.style.display === "none") ? "block" : "none";
+    }
+
+
+    function toggleDropdown() {
+        var dropdown = document.getElementById("megaDropdown").getElementsByClassName("mega-column")[0];
+        dropdownContent.style.display = (dropdownContent.style.display === "none") ? "block" : "none";
+    }
+
+
+    // JavaScript function to show the body when the video has loaded
+    document.getElementById("myVideo").addEventListener("loadeddata", function() {
+        document.body.style.display = "block";
+    });
+</script>
+
+</body>
+</html>

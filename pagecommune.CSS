@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&display=swap');
+
+html, body {
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(247, 246, 246);
+    overflow-x: hidden;
+
+  }
+
+  .image {
+    background-image: url(olena-bohovyk-p8NSgvjEk-Y-unsplash.jpg);
+    height: 200px; /* Set a fixed height for the image container */}
+
+.logosite{
+        position: absolute;
+        top: 1cm;
+        left: 0cm;
+      }
+      
+  img {
+        max-width: 100%;
+      }
+    
+  .boximg {
+    box-sizing: content-box;
+    width: 15cm;
+    height: 12cm;
+    position: absolute;
+    left: 2cm;
+    bottom: 6cm;
+  }
+
+  .slider-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+  }
+
+  .menu label:hover {
+    background: red;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+  }
+
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+
+  .slide-1 {
+    background-image: url("image1.jpg");
+  }
+
+  .slide-2 {
+    background-image: url("image2.png");
+  }
+
+  .slide-3 {
+    background-image: url("image3.jpg");
+  }
+  
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .titrerr {
+    font-size: 16px;
+  }
+
+  
